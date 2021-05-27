@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito+Sans&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center; }
+
+header {
+  width: 100%; }
+
+.nav-bar-items {
+  justify-content: flex-end; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #272727;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  margin-left: 1rem; }
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #3bcfcb; }
+
+.hero-section {
+  height: 41.875rem;
+  background: url("../img/final.jpg");
+  background-size: cover;
+  background-position: right top; }
+  .hero-section .container {
+    height: 100%; }
+    .hero-section .container .hero-content {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1.125rem;
+      width: 31.5625rem; }
+
+h1 {
+  font-size: 2.375rem;
+  font-weight: 600; }
+
+.btn-contact-us {
+  background: #3bcfcb;
+  border-radius: 0;
+  font-size: 0.75rem;
+  padding: .9375rem 2.5rem;
+  font-weight: 600; }
+
+.about-section {
+  background: #ffff;
+  padding: 6.25rem; }
+  .about-section .about-text {
+    max-width: 33rem;
+    text-align: center; }
+
+.skill-section {
+  background: linear-gradient(#cdf5ffe7, #2f475238), url("../img/img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 35.625rem; }
+  .skill-section .container {
+    height: 100%; }
+  .skill-section .skill-title {
+    font-size: 0.75rem;
+    text-transform: capitalize; }
+  .skill-section .progress {
+    height: .1875rem;
+    background: #d8d8d8; }
+  .skill-section .progress-bar {
+    background: #3bcfcb; }
+
+.progress .progress-bar {
+  border-radius: 10%;
+  box-shadow: none;
+  animation: animate-positive 2s; }
+
+.progress .progress-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #6b7880;
+  position: absolute;
+  top: 3px;
+  right: 10px; }
+
+@keyframes animate-positive {
+  0% {
+    width: 0; } }
+
+.project-section {
+  background: #3bcfcb;
+  font-weight: 600;
+  color: #fff; }
+  .project-section .container {
+    height: 100%; }
+  .project-section .details {
+    margin-left: 1.5625rem;
+    margin-top: .0625rem;
+    text-transform: uppercase;
+    font-size: 0.75rem; }
+  .project-section .row-class {
+    width: 100%; }
+
+.work-section {
+  background: #f5f5f5; }
+  .work-section .work-container {
+    max-width: 93.75rem; }
+  .work-section .photo-item {
+    height: 15rem;
+    position: relative; }
+    .work-section .photo-item a {
+      background: red; }
+      .work-section .photo-item a .img-1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1; }
+    .work-section .photo-item a::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: blue;
+      opacity: 0;
+      z-index: 1;
+      transition: 1s; }
+    .work-section .photo-item a:hover::before {
+      opacity: .3; }
+    .work-section .photo-item a::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 13%;
+      width: 20%;
+      background: url("../img/eye.png") no-repeat center center;
+      opacity: 0;
+      z-index: 165465;
+      transition: 1s; }
+    .work-section .photo-item a:hover::after {
+      opacity: 1; }
+  .work-section .load-more {
+    height: 6.25rem; }
+    .work-section .load-more h5 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #8e8e8e;
+      font-weight: 600; }
+
+.video-section {
+  padding: 6.25rem; }
+  .video-section .video-content {
+    max-width: 33rem; }
+  .video-section .video-text {
+    font-family: "Nunito Sans", sans-serif; }
+  .video-section .video-container {
+    margin-top: 3rem;
+    height: 50vh;
+    width: 100%; }
+  .video-section .video-img {
+    height: 100%;
+    width: 100%;
+    background: url("../img/img (1).jpg") no-repeat center center;
+    background-size: cover; }
+  .video-section .video-icon {
+    height: 5.3125rem;
+    width: 5.3125rem;
+    background: url("../img/arrow.png") no-repeat; }
+
+.services-section {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 6.25rem; }
+  .services-section .service-title {
+    font-size: 0.75rem;
+    text-transform: capitalize; }
+  .services-section .regular-text {
+    font-size: 0.75rem;
+    font-family: "Nunito Sans", sans-serif; }
+
+.slider-section {
+  background: #3bcfcb;
+  font-weight: 600;
+  color: #fff; }
+  .slider-section .container {
+    height: 500px;
+    overflow: hidden;
+    position: relative; }
+  .slider-section .slides {
+    height: 100%;
+    width: 300%;
+    animation: slide 10s linear infinite; }
+
+@keyframes slide {
+  0% {
+    margin-left: 0%; }
+  20% {
+    margin-left: 0%; }
+  40% {
+    margin-left: -100%; }
+  60% {
+    margin-left: -100%; }
+  80% {
+    margin-left: -200%; }
+  95% {
+    margin-left: -200%; }
+  100% {
+    margin-left: 0; } }
+  .slider-section .slide-item {
+    width: 100%;
+    height: 100%;
+    margin: 0 1rem; }
+  .slider-section .slider-text {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 51.25rem; }
+  .slider-section .input-button {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+
+.logo-section {
+  background: white; }
+
+.need-section {
+  background: #f5f5f5; }
+  .need-section .container {
+    padding-top: 6.25rem; }
+  .need-section .need-text {
+    max-width: 33.75rem;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-family: "Nunito Sans", sans-serif; }
+  .need-section .first-inputs {
+    height: 50px; }
+  .need-section .first-inputs, .need-section textarea {
+    background: #fff;
+    border: 0;
+    border-radius: .3rem;
+    padding: .9375rem;
+    font-weight: 600; }
+  .need-section .first-inputs::placeholder, .need-section textarea::placeholder {
+    font-size: .9375rem;
+    font-family: "Nunito Sans", sans-serif; }
+  .need-section form {
+    padding-bottom: 6.25rem; }
+    .need-section form .container {
+      max-width: 41.875rem;
+      padding: 0; }
+      .need-section form .container .row {
+        margin: 1.5625rem 0; }
+      .need-section form .container .send-msg-btn {
+        border-radius: 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.75rem;
+        padding: 1.25rem 1.875rem;
+        background: #3bcfcb;
+        border: 0; }
+      .need-section form .container textarea {
+        margin-bottom: .9375rem; }
+
+footer {
+  padding: 6.25rem;
+  color: #bcbcbc;
+  background: #141414; }
+  footer h6 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff; }
+  footer .footer-text {
+    font-size: .9375rem;
+    font-family: "Nunito Sans", sans-serif; }
+  footer ul {
+    padding: 0;
+    margin-right: 1.875rem; }
+  footer ul li {
+    list-style-type: none;
+    padding: 0; }
+  footer ul li a {
+    text-decoration: none;
+    color: #bcbcbc; }
